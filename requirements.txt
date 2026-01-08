@@ -1,0 +1,3 @@
+numpy>=1.23
+pyyaml>=6.0
+scipy>=1.9; platform_system!="PyPy"  # optional, used for Savitzky–Golay smoothing if available

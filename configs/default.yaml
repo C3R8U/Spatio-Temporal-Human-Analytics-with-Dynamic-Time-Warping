@@ -1,0 +1,26 @@
+seed: 2024
+
+data:
+  target_fps: 60
+  joints: 25
+  root_joint: "pelvis"
+  scale_ref: "shoulder_width"
+
+rotation:
+  left_shoulder: 5
+  right_shoulder: 6
+  left_hip: 11
+  right_hip: 12
+  min_proj_norm: 1e-6
+
+smoothing:
+  method: "savgol"
+  window: 11
+  polyorder: 3
+
+dtw:
+  band_ratio: 0.10
+
+scoring:
+  base_score: 10.0
+  alpha: 0.8
